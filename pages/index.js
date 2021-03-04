@@ -10,7 +10,7 @@ export default function Home() {
       pathname: 'https://accounts.google.com/o/oauth2/v2/auth',
       query: {
         client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
-        redirect_uri: 'http://localhost:3000/profile',
+        redirect_uri: 'https://oauth2.vercel.app/profile',
         response_type: 'token',
         scope: 'https://www.googleapis.com/auth/userinfo.profile',
       },
